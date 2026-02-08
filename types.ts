@@ -1,0 +1,1 @@
+// Obsolète - Types intégrés ou inutiles en JS Vanille

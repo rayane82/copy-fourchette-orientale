@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fourchette Orientale | À Propos - Notre Héritage</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230B3022'/%3E%3Cpath d='M50 20 L55 40 L75 40 L60 55 L65 75 L50 60 L35 75 L40 55 L25 40 L45 40 Z' fill='%23D4AF37'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --forest-green: #0B3022; --gold: #D4AF37; --cream: #F9F7F2; --terracotta: #8E3A1F; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--cream); color: #1c1917; }
+        h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
+        .nav-scrolled { background-color: var(--forest-green); padding-top: 0.5rem; padding-bottom: 0.5rem; }
+    </style>
+</head>
+<body class="selection:bg-[#D4AF37]">
+    <!-- NAVIGATION (Copied from index) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 nav-scrolled">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <img src="https://i.postimg.cc/Wpw7D39h/602818834-18089739302297337-6789941149446710277-n.jpg" class="h-12 w-12 rounded-full border-2 border-[#D4AF37]">
+                <div class="flex flex-col text-white">
+                    <span class="text-lg font-serif font-bold tracking-widest leading-none">LA FOURCHETTE</span>
+                    <span class="text-[9px] tracking-[0.3em] font-light text-[#D4AF37]">ORIENTALE</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="text-[10px] font-bold tracking-widest uppercase text-white hover:text-[#D4AF37]">Accueil</a>
+                <a href="a-propos.html" class="text-[10px] font-bold tracking-widest uppercase text-white hover:text-[#D4AF37] border-b-2 border-[#D4AF37]">À Propos</a>
+                <a href="menu.html" class="text-[10px] font-bold tracking-widest uppercase text-white hover:text-[#D4AF37]">Menu</a>
+                <a href="avis.html" class="text-[10px] font-bold tracking-widest uppercase text-white hover:text-[#D4AF37]">Avis</a>
+                <a href="contact.html" class="px-8 py-3 bg-[#D4AF37] text-white text-[12px] font-black uppercase rounded-2xl hover:bg-white hover:text-[#0B3022] transition-all shadow-lg">Nous Contacter</a>
+            </div>
+            <button class="lg:hidden text-white p-2" onclick="toggleMobileMenu()"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 bg-[#8E3A1F] min-h-screen text-center px-6">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <span class="inline-block px-8 py-3 bg-[#D4AF37] text-white text-[10px] font-black uppercase tracking-[0.4em] rounded-2xl">Héritage & Passion</span>
+            <h2 class="text-5xl md:text-7xl font-serif font-bold text-white">L'âme de <span class="text-[#D4AF37] italic font-normal">notre demeure</span></h2>
+            <img src="https://i.postimg.cc/1X1MV9mp/2026-01-09-(1).webp" class="w-full max-w-sm mx-auto rounded-[2rem] shadow-2xl">
+            <div class="bg-white/5 border border-white/10 p-8 md:p-12 rounded-[3rem] backdrop-blur-md text-white text-lg leading-relaxed">
+                <p>Situé à Oujda, au Maroc, <span class="text-[#D4AF37] font-bold">Fourchette Orientale</span> vous accueille dans un cadre où l’on s’assoit comme chez soi. <br><br> Découvrez nos plats traditionnels préparés avec des ingrédients frais, dans un cadre chaleureux. Entre saveurs marocaines généreuses et accueil chaleureux, chaque repas est un véritable voyage gustatif.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Copied from index) -->
+    <footer class="bg-[#0B3022] pt-24 pb-12 text-white border-t border-[#D4AF37]/20 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div><img src="https://i.postimg.cc/Wpw7D39h/602818834-18089739302297337-6789941149446710277-n.jpg" class="h-20 w-20 rounded-full mb-6 border-2 border-[#D4AF37] mx-auto md:mx-0"><h3 class="text-xl font-serif font-bold uppercase">LA FOURCHETTE <br><span class="text-[#D4AF37] text-sm">ORIENTALE</span></h3></div>
+            <div><h4 class="text-[#D4AF37] font-black uppercase text-[10px] tracking-[0.5em] mb-4">Localisation</h4><p class="text-stone-300 text-sm uppercase">Boulevard Mohammed Derfoufi, Oujda</p></div>
+            <div><h4 class="text-[#D4AF37] font-black uppercase text-[10px] tracking-[0.5em] mb-4">Horaires</h4><p class="text-stone-300 text-sm">Lun - Sam: 10h - 17h</p></div>
+            <div><h4 class="text-[#D4AF37] font-black uppercase text-[10px] tracking-[0.5em] mb-4">Contacts</h4><p class="text-white text-xl font-serif font-bold">0770-454031</p></div>
+        </div>
+    </footer>
+    <script>
+        function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+// Ce fichier est intentionnellement vide pour respecter la contrainte d'un fichier HTML unique.

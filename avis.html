@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fourchette Orientale | Avis Clients</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230B3022'/%3E%3Cpath d='M50 20 L55 40 L75 40 L60 55 L65 75 L50 60 L35 75 L40 55 L25 40 L45 40 Z' fill='%23D4AF37'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --forest-green: #0B3022; --gold: #D4AF37; --terracotta: #8E3A1F; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--terracotta); color: white; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .testimonial-card { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 2rem; padding: 2.5rem; transition: 0.4s; }
+        .testimonial-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.2); }
+    </style>
+</head>
+<body>
+    <nav class="fixed w-full z-50 py-6 bg-[#8E3A1F] border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4">
+                <img src="https://i.postimg.cc/Wpw7D39h/602818834-18089739302297337-6789941149446710277-n.jpg" class="h-12 w-12 rounded-full border-2 border-[#D4AF37]">
+                <div class="flex flex-col text-white"><span class="text-lg font-serif font-bold tracking-widest leading-none">LA FOURCHETTE</span><span class="text-[9px] tracking-[0.3em] text-[#D4AF37]">ORIENTALE</span></div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-10 text-white">
+                <a href="index.html" class="text-[10px] font-bold uppercase hover:text-[#D4AF37]">Accueil</a>
+                <a href="a-propos.html" class="text-[10px] font-bold uppercase hover:text-[#D4AF37]">À Propos</a>
+                <a href="menu.html" class="text-[10px] font-bold uppercase hover:text-[#D4AF37]">Menu</a>
+                <a href="avis.html" class="text-[10px] font-bold uppercase text-[#D4AF37] border-b-2 border-[#D4AF37]">Avis</a>
+                <a href="contact.html" class="px-8 py-3 bg-[#D4AF37] text-[12px] font-black uppercase rounded-2xl">Réserver</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 px-6 max-w-7xl mx-auto">
+        <h1 class="text-5xl md:text-8xl font-serif font-bold mb-16 text-center">L'expérience de <br><span class="text-[#D4AF37] italic">nos hôtes</span></h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="testimonial-card">
+                <div class="flex text-[#D4AF37] mb-4"><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i></div>
+                <p class="italic mb-6 text-white/90">"Excellente expérience au Fourchet Oriental ! La cuisine marocaine est délicieuse, les plats sont généreux et authentiques."</p>
+                <div class="font-bold">Jouria Jouri</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="flex text-[#D4AF37] mb-4"><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i><i data-lucide="star" fill="#D4AF37" size="16"></i></div>
+                <p class="italic mb-6 text-white/90">"Je recommande ce restaurant, service très agréable et personnel super accueillant ! Petit déjeuner beldi de qualité."</p>
+                <div class="font-bold">Jasmina mafra</div>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-white/20 text-[8px] uppercase tracking-[0.8em]">© 2025 LA FOURCHETTE ORIENTALE</footer>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

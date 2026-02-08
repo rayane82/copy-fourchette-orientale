@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fourchette Orientale | Notre Menu</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230B3022'/%3E%3Cpath d='M50 20 L55 40 L75 40 L60 55 L65 75 L50 60 L35 75 L40 55 L25 40 L45 40 Z' fill='%23D4AF37'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --forest-green: #0B3022; --gold: #D4AF37; --cream: #F9F7F2; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--forest-green); color: white; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .menu-grid img { border-radius: 2rem; border: 4px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .menu-grid img:hover { border-color: var(--gold); transform: scale(1.02); }
+    </style>
+</head>
+<body>
+    <nav class="fixed w-full z-50 py-6 bg-[#0B3022] border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4">
+                <img src="https://i.postimg.cc/Wpw7D39h/602818834-18089739302297337-6789941149446710277-n.jpg" class="h-12 w-12 rounded-full border-2 border-[#D4AF37]">
+                <div class="flex flex-col"><span class="text-lg font-serif font-bold tracking-widest text-white leading-none">LA FOURCHETTE</span><span class="text-[9px] tracking-[0.3em] font-light text-[#D4AF37]">ORIENTALE</span></div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="text-[10px] font-bold tracking-widest uppercase hover:text-[#D4AF37]">Accueil</a>
+                <a href="a-propos.html" class="text-[10px] font-bold tracking-widest uppercase hover:text-[#D4AF37]">À Propos</a>
+                <a href="menu.html" class="text-[10px] font-bold tracking-widest uppercase text-[#D4AF37] border-b-2 border-[#D4AF37]">Menu</a>
+                <a href="avis.html" class="text-[10px] font-bold tracking-widest uppercase hover:text-[#D4AF37]">Avis</a>
+                <a href="contact.html" class="px-8 py-3 bg-[#D4AF37] text-white text-[12px] font-black uppercase rounded-2xl">Réserver</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 px-6 max-w-7xl mx-auto">
+        <h1 class="text-5xl md:text-8xl font-serif font-bold mb-16 text-center">Le <span class="text-[#D4AF37] italic">Menu</span></h1>
+        <div class="menu-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <img src="https://i.postimg.cc/7ZB0MC2F/2025-10-09-(8).jpg" alt="Menu 1">
+            <img src="https://i.postimg.cc/vTL61DMc/2025-10-09-(9).jpg" alt="Menu 2">
+            <img src="https://i.postimg.cc/YCSm9psz/2025-10-09-(10).jpg" alt="Menu 3">
+            <img src="https://i.postimg.cc/HLccw6H9/2025-10-09-(11).jpg" alt="Menu 4">
+            <img src="https://i.postimg.cc/fb9ytkjc/2025-10-09-(13).jpg" alt="Menu 5">
+            <img src="https://i.postimg.cc/xjRCbwMN/2025-10-09-(14).jpg" alt="Menu 6">
+            <img src="https://i.postimg.cc/XJgVd5ZL/2025-10-09-(15).jpg" alt="Menu 7">
+            <img src="https://i.postimg.cc/02j8Kb9n/2025-10-09-(16).jpg" alt="Menu 8">
+            <img src="https://i.postimg.cc/TwTxdPkd/2025-10-09-(17).jpg" alt="Menu 9">
+            <img src="https://i.postimg.cc/3JkTJVZZ/2025-10-09-(19).jpg" alt="Menu 10">
+            <img src="https://i.postimg.cc/Bv09p6G9/2025-10-09-(20).jpg" alt="Menu 11">
+            <img src="https://i.postimg.cc/G3SWNz1Y/2025-10-09-(21).jpg" alt="Menu 12">
+            <img src="https://i.postimg.cc/15qjdQHC/2025-10-09-(22).jpg" alt="Menu 13">
+            <img src="https://i.postimg.cc/K4SJb1N9/2025-10-09-(23).jpg" alt="Menu 14">
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-white/20 text-[8px] uppercase tracking-[0.8em]">© 2025 LA FOURCHETTE ORIENTALE</footer>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

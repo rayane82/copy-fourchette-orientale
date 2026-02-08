@@ -1,0 +1,1 @@
+// Obsolète - Application migrée vers index.html (Vanilla JS)
